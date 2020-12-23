@@ -10,48 +10,39 @@
   <style>
     .flex-container {
       display: flex;
-      min-height: 100vh;
-      flex-direction: column;
     }
     .flex-item {
       flex-grow: 1;
     }
-    @media (min-width: 600px) {
-      .flex-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      .flex-item {
-        width: 50%;
-        flex: 0 1 auto;
-      }
+    .flex-item:nth-child(1) {
+      width: 150px;
+      flex-shrink: 0;
     }
-    @media (min-width: 900px) {
-      .flex-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      .flex-item {
-        width: 30%;
-        flex: 1 1 auto;
-      }
+    .flex-item:nth-child(3) {
+      width: 200px;
+      flex-shrink: 0;
     }
   </style>
   <body>
     <div class="flex-container">
-      <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
-      <div class="flex-item">BB</div>
-      <div class="flex-item">CCCCCCCCCCCCCC</div>
-      <div class="flex-item">DDDD</div>
-      <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
-      <div class="flex-item">BB</div>
-      <div class="flex-item">CCCCCCCCCCCCCC</div>
-      <div class="flex-item">DDDD</div>
-      <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
-      <div class="flex-item">BB</div>
-      <div class="flex-item">CCCCCCCCCCCCCC</div>
-      <div class="flex-item">DDDD</div>
-      <div class="flex-item">AAAAAAAAAAAAAA</div>
+      <div class="flex-item">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,
+        doloremque. Facere vel non tempore ad recusandae ducimus explicabo quis,
+        quia nisi voluptas aperiam, omnis molestiae voluptate, harum laudantium.
+        Consectetur, commodi.
+      </div>
+      <div class="flex-item">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,
+        doloremque. Facere vel non tempore ad recusandae ducimus explicabo quis,
+        quia nisi voluptas aperiam, omnis molestiae voluptate, harum laudantium.
+        Consectetur, commodi.
+      </div>
+      <div class="flex-item">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,
+        doloremque. Facere vel non tempore ad recusandae ducimus explicabo quis,
+        quia nisi voluptas aperiam, omnis molestiae voluptate, harum laudantium.
+        Consectetur, commodi.
+      </div>
     </div>
   </body>
 </html>
