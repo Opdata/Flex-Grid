@@ -10,18 +10,19 @@
   <style>
     .flex-container {
       display: flex;
-      height: 300px;
-      flex-wrap: wrap;
-      align-content: stretch;
+      width: 250px;
+    }
+    .flex-item:nth-child(1) {
+      flex: 1; /* flex-grow: 1, flex-shrink: 1, flex-basis: 0% */
+      flex: 1 1 auto; /* flex-grow: 1, flex-shrink: 1, flex-basis: auto */
+      flex: 1 500px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 500px */
     }
   </style>
   <body>
     <div class="flex-container">
-      <div class="flex-item">
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-      </div>
+      <div class="flex-item">AAA</div>
       <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
-      <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+      <div class="flex-item">CCC</div>
     </div>
   </body>
 </html>
