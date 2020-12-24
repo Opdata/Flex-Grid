@@ -1,3 +1,5 @@
+/* Header Container */
+
 .menu {
   display: flex;
 }
@@ -25,4 +27,28 @@
 
 .menu-link:hover {
   color: white;
+}
+
+/* Search Container */
+.search-form {
+  display: flex;
+  height: 40px;
+}
+
+.search-form input[type="search"] {
+  flex: 1 0 auto;
+  margin-right: 16px;
+  font-size: 1rem;
+  border-radius: 0.3em;
+  border-style: none;
+}
+
+.search-form input[type="submit"] {
+  width: 4em;
+  background-color: gold;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
 }
