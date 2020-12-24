@@ -52,3 +52,15 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+/* Bullet Container */
+
+.list {
+  display: flex;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
+
+.list:before {
+  content: "😀";
+}
