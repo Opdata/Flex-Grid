@@ -64,3 +64,26 @@
 .list:before {
   content: "😀";
 }
+
+/* Card Container */
+
+.card-item {
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.card-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: gold;
+
+  background-image: url(images/ilbuni.png);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
