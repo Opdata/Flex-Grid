@@ -116,3 +116,22 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/* Modal Container */
+
+.modal {
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.modal-item {
+  width: 50%;
+  padding: 2em;
+  font-size: 1rem;
+  border-radius: 1em;
+  background-color: white;
+}
