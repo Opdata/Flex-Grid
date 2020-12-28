@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+
+  /* Columns */
+  grid-template-columns: 100px 300px 200px;
+  grid-template-columns: 1fr 1fr; /* fraction: 비, 비율, 분수, 부분 */
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 500px 1fr; /* 가운데는 고정, 양 끝은 유동 */
+  grid-template-columns: repeat(5, 1fr); /* 1fr 5개 */
+  grid-template-columns: repeat(3, 1fr 2fr 1fr);
+
+  /* Rows */
+  grid-template-rows: 200px 200px 200px;
+
+  /* Row가 3개 인데 2개만 설정해주면 ? */
+  grid-template-rows: 200px 200px; /* 지정해준 것만 속성이 적용되고 나머지는 자동(auto) */
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-item {
+  /* display: inline; */
+}
