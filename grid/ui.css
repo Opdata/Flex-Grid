@@ -16,9 +16,18 @@
   /* grid-template-rows: 200px 200px; 지정해준 것만 속성이 적용되고 나머지는 자동(auto) */
   /* grid-template-rows: repeat(3, 1fr); */
 
+  /* repeat, minmax, auto-fill, auto-fit 테스트 */
   /* grid-template-columns: repeat(3, 1fr); */
   /* grid-template-rows: repeat(3, minmax(100px, auto)); */
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, auto)); */
+
+  /* gap 테스트*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(200px, auto));
+  gap: 20px;
+  grid-gap: 20px; /* 예전버전 gap 속성 */
+  /* row-gap: 20px; row 에만 gap 을 주고 싶다면 */
+  /* column-gap: 20px; column 에만 gap 을 주고 싶다면 */
 }
 
 .grid-item {
