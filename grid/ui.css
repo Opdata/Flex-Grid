@@ -22,12 +22,20 @@
   /* grid-template-columns: repeat(auto-fit, minmax(200px, auto)); */
 
   /* gap 테스트*/
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, minmax(200px, auto));
-  gap: 20px;
-  grid-gap: 20px; /* 예전버전 gap 속성 */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-rows: repeat(3, minmax(200px, auto)); */
+  /* gap: 20px; */
+  /* grid-gap: 20px; 예전버전 gap 속성 */
   /* row-gap: 20px; row 에만 gap 을 주고 싶다면 */
   /* column-gap: 20px; column 에만 gap 을 주고 싶다면 */
+
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, minmax(200px, auto)); */
+  grid-auto-rows: minmax(
+    100px,
+    auto
+  ); /* 값에 300px 혹은 1fr 등 다양하게 넣을 수 있다. */
+  gap: 1rem;
 }
 
 .grid-item {
