@@ -38,6 +38,24 @@
   gap: 1rem;
 }
 
-.grid-item {
-  /* display: inline; */
+/* 첫번째 셀 영역 테스트 */
+.grid-item:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  /* 축약형 */
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.grid-item:nth-child(3) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.grid-item:nth-child(4) {
+  grid-column: 3 / 4; /* grid 에서 1칸이면 end Line은 생략해도 된다. */
+  grid-row: 2 / 5;
 }
