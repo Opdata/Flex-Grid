@@ -147,7 +147,7 @@
 }
 
 /* Card Section */
-.card-container {
+/* .card-container {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -168,17 +168,30 @@
 }
 
 @media (min-width: 600.1px) {
-  /* */
+
   .card-item {
     width: 50%;
   }
 }
 
 @media (min-width: 900px) {
-  /* */
+
   .card-item {
     width: 33.3333%;
   }
+} */
+
+/* Card Section Grid Box */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  column-gap: 2%;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1em;
+}
+
+.card-item {
+  margin-bottom: 2em;
 }
 
 .item-image {
