@@ -1,0 +1,94 @@
+body {
+  background-color: darkgrey;
+}
+
+.wrap {
+  display: grid;
+  max-width: 1200px;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+/* Button Section */
+
+input[type="radio"] {
+  position: absolute;
+  left: -1000rem;
+}
+
+.sort-label {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+:checked + .sort-label {
+  color: white;
+  background-color: black;
+}
+
+#radio-sort-category:checked ~ .item-music {
+  grid-row: 3 / 4;
+}
+
+#radio-sort-category:checked ~ .item-food {
+  grid-row: 4 / 5;
+}
+
+#radio-sort-category:checked ~ .item-game {
+  grid-row: 5 / 6;
+}
+
+#radio-sort-category:checked ~ .item-tech {
+  grid-row: 6 / 7;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  color: darkslategrey;
+  grid-column: 1 / 5;
+}
+
+.item-title {
+  font-size: 1rem;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+.item-content {
+  font-size: 0.8rem;
+  padding: 1em;
+  background-color: white;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: darkslategrey;
+  /* margin-bottom: 1em; */
+}
+
+.item-music {
+  background-color: crimson;
+}
+
+.item-food {
+  background-color: coral;
+}
+
+.item-game {
+  background-color: forestgreen;
+}
+
+.item-tech {
+  background-color: royalblue;
+}
+
+/* Footer Section */
+.footer {
+  padding: 1.5em;
+  grid-column: 1 / 5;
+  grid-row: 7 / 8;
+}
