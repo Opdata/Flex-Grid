@@ -1,0 +1,19 @@
+/* IE 10, 11 */
+
+.container {
+  display: -ms-grid; /* display: grid; */
+  -ms-grid-rows: 1fr; /* grid-template-rows */
+  -ms-grid-columns: 1fr; /* grid-template-columns */
+  grid-row-start: 0; /* -ms-grid-row */
+  grid-column-start: 0; /* -ms-grid-column */
+  grid-row: 1 / 2; /* -ms-grid-row-span: 2; */
+  grid-column: 1 / 2; /* -ms-grid-column-span: 2; */
+  align-self: end; /* -ms-grid-row-align */
+  justify-self: end; /* -ms-grid-column-align */
+
+  /* -ms-grid-columns 등 repeat 을 사용하는 문법이 다르다. */
+
+  -ms-grid-columns: 1fr (20px 1fr) [3]; /* grid-template-columns */
+
+  /* gap 은 IE 에서 지원 X, padding or margin 으로 만드는 편 */
+}
